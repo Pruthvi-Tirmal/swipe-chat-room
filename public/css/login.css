@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #af7ac5;
+}
+
+.container {
+  width: 550px;
+  max-width: 95%;
+  height: auto;
+  padding: 10px;
+  max-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #9568a7, -20px -20px 60px #c98ce3;
+}
+.brand {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.brand__icon {
+  height: 50px;
+}
+.brand__name {
+  font-style: italic;
+  color: #212f3d;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.inputContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  max-height: 45vh;
+  padding: 10px;
+  background-color: #76d7c4;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.inputContainer > .username__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  align-self: baseline;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.fix {
+  margin-right: 10px;
+}
+input {
+  width: 90%;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #212f3d;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  width: 95%;
+  padding: 5px;
+  border-radius: 20px 40px;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: larger;
+  margin: 0.75rem 0;
+  color: #212f3d;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 546px) {
+  .container {
+    width: 100%;
+  }
+  .inputContainer {
+    height: 50vh;
+  }
+}

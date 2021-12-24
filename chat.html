@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/chat.css" />
+    <title>Chat Room</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand">
+        <div class="brand__container">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/chat-2130787-1794829.png"
+            alt="Brand Icon"
+            class="brand__icon"
+          />
+          <h3 class="brand__name">Swipe Chat Room</h3>
+        </div>
+        <button class="leave_btn">Leave Chat</button>
+      </div>
+      <div class="msg__container">
+        <div class="sidebar">
+          <div class="room__name">
+            <h4 class="room__headline">
+              <i class="fab fa-joomla"></i>
+              Room
+            </h4>
+            <p id="room" class="highlight"></p>
+          </div>
+          <div class="users">
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <div class="members"></div>
+          </div>
+        </div>
+        <div class="msgArea"></div>
+      </div>
+      <div class="typing">
+        <p id="typer"></p>
+      </div>
+      <div class="input__container">
+        <textarea
+          name=""
+          autofocus
+          id=""
+          cols="30"
+          rows="1"
+          placeholder="Chatting.😀😉"
+        ></textarea>
+        <button class="msg__btn"><i class="fas fa-location-arrow"></i></button>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+      integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

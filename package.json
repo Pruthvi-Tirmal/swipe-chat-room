@@ -1,0 +1,17 @@
+{
+  "name": "chat_room_app",
+  "version": "1.0.0",
+  "description": "This is simple chat room messaging app which uses socket.io and vanilla javascript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Pruthvi Tirmal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.0"
+  }
+}
