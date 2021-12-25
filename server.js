@@ -53,8 +53,8 @@ io.on('connection', (socket) => {
     socket.on('chatting', msg => {
         const user = getCurrentUser(socket.id);
         console.log(user);
-        user.room ? user.room : 'swipeBotRoom'
-        socket.broadcast.to(user.room).emit('message', formatMessage(user.username, msg.text));  //send to client
+
+        socket.broadcast.to(user.room ? user.room : 'swipeBotRoom').emit('message', formatMessage(user.username, msg.text));  //send to client
     })
 
     // Runs when the client disconnects
