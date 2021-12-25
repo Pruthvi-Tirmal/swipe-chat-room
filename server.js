@@ -21,7 +21,7 @@ app.get('/chat', (req, res) => {
     res.sendFile(path.join(__dirname + "/chat.html"))
 })
 
-const botName = "admin"
+const botName = "SwipeBot"
 // socket.io 
 // we have to inside the connection function (on) only 
 io.on('connection', (socket) => {
@@ -71,8 +71,6 @@ io.on('connection', (socket) => {
         }
     })
 })
-
-
 
 
 // PORT

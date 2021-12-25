@@ -1,13 +1,12 @@
-const moment = require('moment');
 
 const formatMessage = (username, text) => {
+    // time zone 
+    const Time = new Date().toLocaleTimeString([], { timeStyle: 'short' });
     return {
         username,
         text,
-        time: moment().format('LT')
+        time: Time
     }
 }
-
-console.log(moment().format('LT'));
 
 module.exports = { formatMessage };
