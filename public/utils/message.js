@@ -6,7 +6,7 @@ const formatMessage = (username, text) => {
         username,
         text,
         // time: Time   // there is some problem while deploying in heroku 
-        time: moment().tz("Asia/Kolkata").format('h:mm a')
+        time: moment().tz("Asia/Kolkata").format('h:mm a')  //problem solved
     }
 }
 

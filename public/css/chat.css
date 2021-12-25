@@ -76,7 +76,7 @@ body {
 }
 .msg__container {
   display: flex;
-  height: 70vh;
+  height: 77vh;
   max-height: 85vh;
 }
 
@@ -274,6 +274,7 @@ body {
   flex: 0.5;
   margin-left: 10px;
   border-radius: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +286,7 @@ body {
   background-color: #3ffdfd;
 }
 .msg__btn > .fas {
-  font-size: 3.2vmin;
+  font-size: 4vmin;
   color: #242b2e;
 }
 .msg__btn:active {
@@ -369,7 +370,7 @@ body {
     border-radius: 50px;
   }
   .msg__btn > .fas {
-    font-size: 4.5vmin;
+    font-size: 5vmin;
   }
 }
 
