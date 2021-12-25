@@ -52,7 +52,8 @@ io.on('connection', (socket) => {
     //listening chat msg
     socket.on('chatting', msg => {
         const user = getCurrentUser(socket.id);
-        // console.log(user);
+        console.log(user);
+        user.room ? user.room : 'swipeBotRoom'
         socket.broadcast.to(user.room).emit('message', formatMessage(user.username, msg.text));  //send to client
     })
 
