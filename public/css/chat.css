@@ -216,18 +216,26 @@ body {
 /* incoming animation */
 @keyframes fadeIncoming {
   from {
+    opacity: 0;
+    visibility: hidden;
     transform: translateX(-500px);
   }
   to {
+    opacity: 1;
+    visibility: visible;
     transform: translateX(0px);
   }
 }
 /* outgoing animation */
 @keyframes fadeOutGoing {
   from {
+    opacity: 0;
+    visibility: hidden;
     transform: translateX(500px);
   }
   to {
+    opacity: 1;
+    visibility: visible;
     transform: translateX(0px);
   }
 }

@@ -4,10 +4,10 @@ const formatMessage = (username, text) => {
     return {
         username,
         text,
-        time: moment().format('h:mm a')
+        time: moment().format('LT')
     }
 }
 
-
+console.log(moment().format('LT'));
 
 module.exports = { formatMessage };
