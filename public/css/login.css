@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,18 @@
 }
 
 body {
-  display: grid;
-  place-items: center;
   min-height: 100vh;
   background: #af7ac5;
 }
 
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
 .container {
   width: 550px;
   max-width: 95%;
@@ -93,6 +100,23 @@ button:active {
   transform: scale(0.95);
 }
 
+footer{
+  display: flex;
+  position: absolute;
+  bottom:10px;
+  justify-content: center;
+  align-items: center;
+}
+footer > a{
+  text-decoration: none;
+  font-family: 'Square Peg', cursive;
+  font-size: 4vmin;
+  color: #fff;
+}
+footer > a:hover
+{
+  text-decoration: line-through;
+}
 @media screen and (max-width: 546px) {
   .container {
     width: 100%;

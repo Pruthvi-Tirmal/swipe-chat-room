@@ -14,36 +14,43 @@
     <title>Join Now</title>
   </head>
   <body>
-    <div class="container">
-      <div class="brand">
-        <img
-          src="https://cdn.iconscout.com/icon/free/png-256/chat-2130787-1794829.png"
-          alt="Brand Icon"
-          class="brand__icon"
-        />
-        <h3 class="brand__name">Swipe Room Chat</h3>
+    <div class="box">
+      <div class="container">
+        <div class="brand">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/chat-2130787-1794829.png"
+            alt="Brand Icon"
+            class="brand__icon"
+          />
+          <h3 class="brand__name">Swipe Room Chat</h3>
+        </div>
+        <form action="chat" method="get" class="inputContainer">
+          <div class="username__container">
+            <label for=""> Username </label>
+            <input
+              required
+              type="text"
+              name="username"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="username__container fix">
+            <label for=""> Room Name </label>
+            <input
+              required
+              type="text"
+              name="room"
+              placeholder="Create Or Enter Room"
+            />
+          </div>
+          <button>Join 😀</button>
+        </form>
       </div>
-      <form action="chat" method="get" class="inputContainer">
-        <div class="username__container">
-          <label for=""> Username </label>
-          <input
-            required
-            type="text"
-            name="username"
-            placeholder="Enter Your Name"
-          />
-        </div>
-        <div class="username__container fix">
-          <label for=""> Room Name </label>
-          <input
-            required
-            type="text"
-            name="room"
-            placeholder="Create Or Enter Room"
-          />
-        </div>
-        <button>Join 😀</button>
-      </form>
+      <footer>
+        <a target="_blank" href="https://www.instagram.com/phoenix_81_/"
+          >Design and Developed by Phoenix ⚡</a
+        >
+      </footer>
     </div>
   </body>
 </html>

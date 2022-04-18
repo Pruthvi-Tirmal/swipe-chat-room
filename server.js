@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const http = require('http');
-
+const favicon = require('serve-favicon');
 // input messages
 const { formatMessage } = require('./public/utils/message');
 const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./public/utils/user')
@@ -10,7 +10,8 @@ const server = http.createServer(app);
 
 const io = require('socket.io')(server);
 // set the static files
-app.use(express.static(path.join(__dirname + '/public/')))
+app.use(favicon(path.join(__dirname + '/public/' + 'favicon.ico')))
+app.use(express.static(path.join(__dirname + '/public/')));
 // get 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + "/login.html"));
