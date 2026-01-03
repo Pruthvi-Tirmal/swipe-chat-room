@@ -6,16 +6,15 @@
 
 ## Brief Description
 
-Developed Video Calling web application using React.js as frontend and Express.js as backend. User can connect to there mates with code generate by create section and sharing the code among the mates and going to join section joining the meeting. Room has limit of not more than 6 people .
+Swipe-Chat-Room is a real-time, no-storage chat application focused on speed, privacy, and security. Built using Socket.IO and Express.js, it enables instant messaging without saving any chat data. The app includes WhatsApp-like typing indicators for a smooth communication experience. It is fully responsive and works seamlessly on both desktop and mobile devices. Users can create or join chat rooms using case-sensitive room codes. It also supports quick, read-once text sharing similar to a pager.
 
 ## Features
 
-- Created Features to create and Join the Room.
-- Implemented SMTP transport using Nodemailer package.
-- Implemented mute/unmute and show/hide video features.
-- Room codes implemented using the nanoID package.
-- Achieved Real-time Communication using socket.io and peer.js.
-- Applied GoogleAuth using Firebase
+- 🔒 No Message Storage – Messages are never saved, ensuring maximum privacy
+- ⚡ Real-Time Messaging powered by Socket.IO
+- ✍️ Live Typing Indicators for better user interaction
+- 📱 Fully Responsive Design – works on mobile and desktop
+- 🔑 Secure Room-Based Chat with case-sensitive room codes
 
 
 <!-- ## Demo
